@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- the metadata of the website -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registraion system</title>
+    <!-- linking the styles page  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- the header of the page which includes h1 and p  -->
+    <header id="header">
+        <h1>Student Registration System</h1>
+        <p>This is the system where we add ,delete and edit the details of the students</p>  
+    </header>
+    <main class="main">
+    <!-- Student Registration Form -->
+    <section class="formsection">
+        <div>
+            <h2>Register New Student</h2>
+        </div>
+        <!-- this the the form page  -->
+        <form id="studentForm">
+            <!-- for entering the name of the student  -->
+            <div class="form-row">
+                <label for="studentName">Student Name</label>
+                <input type="text" id="studentName" placeholder="Enter your full name" required>
+            </div>
+            <!-- for entering the usn of the student  -->
+            <div class="form-row">
+                <label for="studentId">Student USN</label>
+                <input type="text" id="studentId" placeholder="Example: 801" required>
+            </div>
+            <!-- email id of the student  -->
+            <div class="form-row">
+                <label for="email">Email ID</label>
+                <input type="email" id="email" placeholder="Example: student@example.com" required>
+            </div>
+            <!-- contact number of the student  -->
+            <div class="form-row">
+                <label for="contact">Contact Number</label>
+                <input type="text" id="contact" placeholder="10 digit number" required>
+            </div>
+            <!-- submit button to add the student  -->
+            <button type="submit" class="btn-primary" id="submitBtn">Add Student</button>
+        </form>
+    </section>
+
+    <!-- displaying the details of the student when added  -->
+     <section class="displaysection">
+        <h2>Registered Students</h2>
+        <!-- the table where we the heading are displayed -->
+        <div class="table-wrapper">
+            <table id="studentsTable">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Student USN</th>
+                        <th>Email ID</th>
+                        <th>Contact No.</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be added here dynamically with JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+    
+    <!-- the js file linking  -->
+    <script src="app.js"></script>
+    
+</body>
+</html>

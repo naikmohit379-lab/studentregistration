@@ -1,0 +1,166 @@
+/* universal styling  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+/* body style  */
+body {
+
+    background-color: black;
+    color:pink;
+}
+/* styling the heading  */
+#header{   
+    text-align: center;
+    background-color: darkorchid;
+    height: 100px;
+
+}
+#header h1{
+    margin-bottom:20px;
+    color: white;
+}
+.formsection{
+ /* display: flex; */
+ margin: 30px;
+}
+.formsection h2{
+    color: white;
+    margin: 40px;
+    text-align: center;
+}
+
+#studentForm{
+    margin: 10px;
+    padding: 10px;
+    background-color: darkorchid;
+    text-align: center;
+    border-radius: 50px;
+    
+
+}
+.form-row{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+   
+
+}
+.form-row input{
+    border-radius: 10px;
+    margin-left:10px ;
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 50px;
+
+    
+}
+/* changing the input fields when hovered over them  */
+.form-row input:hover{
+   background-color: azure;
+   color: black;
+
+}
+/* styling the submit button  */
+#submitBtn{
+    width: 200px;
+    background-color: black;
+    color: white;
+    height: 50px;
+    border-radius: 50px;
+}
+/* changing the color when hover over submit button  */
+#submitBtn:hover{
+    color:black;
+    background-color: azure;
+   
+}
+.displaysection h2{
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+ 
+}
+.table-wrapper{
+    background-color: darkorchid;
+    margin:40px;
+     overflow-x: auto;
+    
+}
+#studentsTable thead tr th{
+    border:2px solid white;
+   padding: 10px;
+
+}
+#studentsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/*  media query for mobile */
+@media (max-width: 640px) {
+
+    #header {
+        height: auto;
+        padding: 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form-row input {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #submitBtn {
+        width: 100%;
+    }
+
+    .table-wrapper {
+        overflow-x: auto;
+    }
+}
+
+/* media query for tablet */
+@media (min-width: 641px) and (max-width: 1024px) {
+
+    .form-row {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .form-row input {
+        width: 45%;
+        margin: 10px;
+    }
+
+    #submitBtn {
+        width: 50%;
+    }
+}
+
+/*destop*/
+@media (min-width: 1025px) {
+
+    .form-row {
+        flex-direction: row;
+    }
+
+    .form-row input {
+        width: 200px; 
+    }
+
+    #submitBtn {
+        width: 200px;
+    }
+}
