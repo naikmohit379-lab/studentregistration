@@ -26,21 +26,25 @@
             <div class="form-row">
                 <label for="studentName">Student Name</label>
                 <input type="text" id="studentName" placeholder="Enter your full name" required>
+                <small class="error" id="nameError"></small>
             </div>
             <!-- for entering the usn of the student  -->
             <div class="form-row">
                 <label for="studentId">Student USN</label>
                 <input type="text" id="studentId" placeholder="Example: 801" required>
+                <small class="error" id="idError"></small>
             </div>
             <!-- email id of the student  -->
             <div class="form-row">
                 <label for="email">Email ID</label>
                 <input type="email" id="email" placeholder="Example: student@example.com" required>
+                <small class="error" id="emailError"></small>
             </div>
             <!-- contact number of the student  -->
             <div class="form-row">
                 <label for="contact">Contact Number</label>
                 <input type="text" id="contact" placeholder="10 digit number" required>
+                 <small class="error" id="contactError"></small>
             </div>
             <!-- submit button to add the student  -->
             <button type="submit" class="btn-primary" id="submitBtn">Add Student</button>
@@ -51,7 +55,7 @@
      <section class="displaysection">
         <h2>Registered Students</h2>
         <!-- the table where we the heading are displayed -->
-        <div class="table-wrapper">
+        <div class="table-wrapper" id="tableWrapper">
             <table id="studentsTable">
                 <thead>
                     <tr>
