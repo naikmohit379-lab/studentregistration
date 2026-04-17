@@ -65,5 +65,5 @@ Through this project, I learned:
 ## Author
 Mohith Naik
 
-##Github link
+## Github link
 https://github.com/naikmohit379-lab/studentregistration
